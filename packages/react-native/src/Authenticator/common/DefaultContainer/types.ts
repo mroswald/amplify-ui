@@ -23,6 +23,10 @@ export type DefaultContainerComponent<P = {}> = React.ComponentType<
   ContainerProps & P
 >;
 
+export type DefaultInnerContainerComponent<P = {}> = React.ComponentType<
+  React.PropsWithChildren<P>
+>;
+
 export interface InnerContainerStyles {
   container: ViewStyle;
 }

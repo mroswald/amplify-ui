@@ -12,7 +12,10 @@ import {
 } from '@aws-amplify/ui-react-core';
 
 import { useDeprecationWarning } from '../hooks';
-import { DefaultContainer, InnerContainer } from './common';
+import {
+  DefaultContainer,
+  InnerContainer as DefaultInnerContainer,
+} from './common';
 import { TypedField, getRouteTypedFields } from './hooks';
 import { AuthenticatorProps } from './types';
 import { VERSION } from '../version';
@@ -53,6 +56,7 @@ function Authenticator({
   children,
   components: overrides,
   Container = DefaultContainer,
+  InnerContainer = DefaultInnerContainer,
   Footer,
   Header,
   ...options
